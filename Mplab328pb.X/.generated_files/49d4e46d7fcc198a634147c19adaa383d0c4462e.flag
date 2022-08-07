@@ -1,0 +1,1 @@
+$(MP_EXTRA_AS_PRE) -mmcu=atmega328pb ${PACK_COMPILER_OPTIONS} ${PACK_COMMON_OPTIONS}  -x assembler-with-cpp -c -D__$(MP_PROCESSOR_OPTION)__  -o  -DXPRJ_default=$(CND_CONF)  -Wa,--defsym=__MPLAB_BUILD=1$(MP_EXTRA_AS_POST)D:\CursosIEEE\AVR_EMBS_UNAC\Ejemplos\Mplab328pb.X\mcc_generated_files\src\protected_io.S

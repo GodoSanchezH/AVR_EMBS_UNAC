@@ -1,0 +1,330 @@
+
+Ejemplo_Expansor_IO.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         0000000a  00800100  00000246  000002da  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000246  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000003  0080010a  0080010a  000002e4  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  000002e4  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000314  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000068  00000000  00000000  00000354  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000cdc  00000000  00000000  000003bc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000a2a  00000000  00000000  00001098  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00000596  00000000  00000000  00001ac2  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000098  00000000  00000000  00002058  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    0000057e  00000000  00000000  000020f0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    000001c7  00000000  00000000  0000266e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000048  00000000  00000000  00002835  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__ctors_end>
+   4:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+   8:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+   c:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  10:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  14:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  18:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  1c:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  20:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  24:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  28:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  2c:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  30:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  34:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  38:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  3c:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  40:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  44:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  48:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  4c:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  50:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  54:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  58:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  5c:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  60:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  64:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  68:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  6c:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  70:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  74:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  78:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  7c:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  80:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  84:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  88:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  8c:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  90:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  94:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  98:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  9c:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  a0:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  a4:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  a8:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  ac:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+  b0:	0c 94 77 00 	jmp	0xee	; 0xee <__bad_interrupt>
+
+000000b4 <__ctors_end>:
+  b4:	11 24       	eor	r1, r1
+  b6:	1f be       	out	0x3f, r1	; 63
+  b8:	cf ef       	ldi	r28, 0xFF	; 255
+  ba:	d8 e0       	ldi	r29, 0x08	; 8
+  bc:	de bf       	out	0x3e, r29	; 62
+  be:	cd bf       	out	0x3d, r28	; 61
+
+000000c0 <__do_copy_data>:
+  c0:	11 e0       	ldi	r17, 0x01	; 1
+  c2:	a0 e0       	ldi	r26, 0x00	; 0
+  c4:	b1 e0       	ldi	r27, 0x01	; 1
+  c6:	e6 e4       	ldi	r30, 0x46	; 70
+  c8:	f2 e0       	ldi	r31, 0x02	; 2
+  ca:	02 c0       	rjmp	.+4      	; 0xd0 <__do_copy_data+0x10>
+  cc:	05 90       	lpm	r0, Z+
+  ce:	0d 92       	st	X+, r0
+  d0:	aa 30       	cpi	r26, 0x0A	; 10
+  d2:	b1 07       	cpc	r27, r17
+  d4:	d9 f7       	brne	.-10     	; 0xcc <__do_copy_data+0xc>
+
+000000d6 <__do_clear_bss>:
+  d6:	21 e0       	ldi	r18, 0x01	; 1
+  d8:	aa e0       	ldi	r26, 0x0A	; 10
+  da:	b1 e0       	ldi	r27, 0x01	; 1
+  dc:	01 c0       	rjmp	.+2      	; 0xe0 <.do_clear_bss_start>
+
+000000de <.do_clear_bss_loop>:
+  de:	1d 92       	st	X+, r1
+
+000000e0 <.do_clear_bss_start>:
+  e0:	ad 30       	cpi	r26, 0x0D	; 13
+  e2:	b2 07       	cpc	r27, r18
+  e4:	e1 f7       	brne	.-8      	; 0xde <.do_clear_bss_loop>
+  e6:	0e 94 c4 00 	call	0x188	; 0x188 <main>
+  ea:	0c 94 21 01 	jmp	0x242	; 0x242 <_exit>
+
+000000ee <__bad_interrupt>:
+  ee:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+000000f2 <I2C_AVR_Init>:
+			
+			return 2;
+		}
+	}
+	return status;
+}
+  f2:	e9 eb       	ldi	r30, 0xB9	; 185
+  f4:	f0 e0       	ldi	r31, 0x00	; 0
+  f6:	80 81       	ld	r24, Z
+  f8:	8c 7f       	andi	r24, 0xFC	; 252
+  fa:	80 83       	st	Z, r24
+  fc:	88 e4       	ldi	r24, 0x48	; 72
+  fe:	80 93 b8 00 	sts	0x00B8, r24	; 0x8000b8 <__TEXT_REGION_LENGTH__+0x7f80b8>
+ 102:	08 95       	ret
+
+00000104 <I2C_AVR_Start>:
+ 104:	ec eb       	ldi	r30, 0xBC	; 188
+ 106:	f0 e0       	ldi	r31, 0x00	; 0
+ 108:	80 81       	ld	r24, Z
+ 10a:	84 6a       	ori	r24, 0xA4	; 164
+ 10c:	80 83       	st	Z, r24
+ 10e:	80 91 bc 00 	lds	r24, 0x00BC	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7f80bc>
+ 112:	88 23       	and	r24, r24
+ 114:	e4 f7       	brge	.-8      	; 0x10e <I2C_AVR_Start+0xa>
+ 116:	80 91 b9 00 	lds	r24, 0x00B9	; 0x8000b9 <__TEXT_REGION_LENGTH__+0x7f80b9>
+ 11a:	88 7f       	andi	r24, 0xF8	; 248
+ 11c:	88 30       	cpi	r24, 0x08	; 8
+ 11e:	21 f0       	breq	.+8      	; 0x128 <I2C_AVR_Start+0x24>
+ 120:	80 31       	cpi	r24, 0x10	; 16
+ 122:	19 f4       	brne	.+6      	; 0x12a <I2C_AVR_Start+0x26>
+ 124:	81 e0       	ldi	r24, 0x01	; 1
+ 126:	08 95       	ret
+ 128:	81 e0       	ldi	r24, 0x01	; 1
+ 12a:	08 95       	ret
+
+0000012c <I2C_AVR_Address_Slave>:
+ 12c:	8e 7f       	andi	r24, 0xFE	; 254
+ 12e:	61 70       	andi	r22, 0x01	; 1
+ 130:	68 2b       	or	r22, r24
+ 132:	60 93 bb 00 	sts	0x00BB, r22	; 0x8000bb <__TEXT_REGION_LENGTH__+0x7f80bb>
+ 136:	84 e8       	ldi	r24, 0x84	; 132
+ 138:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7f80bc>
+ 13c:	80 91 bc 00 	lds	r24, 0x00BC	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7f80bc>
+ 140:	88 23       	and	r24, r24
+ 142:	e4 f7       	brge	.-8      	; 0x13c <I2C_AVR_Address_Slave+0x10>
+ 144:	80 91 b9 00 	lds	r24, 0x00B9	; 0x8000b9 <__TEXT_REGION_LENGTH__+0x7f80b9>
+ 148:	88 7f       	andi	r24, 0xF8	; 248
+ 14a:	88 31       	cpi	r24, 0x18	; 24
+ 14c:	21 f0       	breq	.+8      	; 0x156 <I2C_AVR_Address_Slave+0x2a>
+ 14e:	80 34       	cpi	r24, 0x40	; 64
+ 150:	19 f4       	brne	.+6      	; 0x158 <I2C_AVR_Address_Slave+0x2c>
+ 152:	81 e0       	ldi	r24, 0x01	; 1
+ 154:	08 95       	ret
+ 156:	81 e0       	ldi	r24, 0x01	; 1
+ 158:	08 95       	ret
+
+0000015a <I2C_AVR_Write_Data>:
+ 15a:	80 93 bb 00 	sts	0x00BB, r24	; 0x8000bb <__TEXT_REGION_LENGTH__+0x7f80bb>
+ 15e:	84 e8       	ldi	r24, 0x84	; 132
+ 160:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7f80bc>
+ 164:	80 91 bc 00 	lds	r24, 0x00BC	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7f80bc>
+ 168:	88 23       	and	r24, r24
+ 16a:	e4 f7       	brge	.-8      	; 0x164 <I2C_AVR_Write_Data+0xa>
+ 16c:	80 91 b9 00 	lds	r24, 0x00B9	; 0x8000b9 <__TEXT_REGION_LENGTH__+0x7f80b9>
+ 170:	88 7f       	andi	r24, 0xF8	; 248
+ 172:	88 32       	cpi	r24, 0x28	; 40
+ 174:	09 f4       	brne	.+2      	; 0x178 <I2C_AVR_Write_Data+0x1e>
+ 176:	81 e0       	ldi	r24, 0x01	; 1
+ 178:	08 95       	ret
+
+0000017a <I2C_AVR_Stop>:
+void I2C_AVR_Stop(void){
+	TWCR0 |= (1<<TWEN)|(1<<TWSTO)|(1<<TWINT);
+ 17a:	ec eb       	ldi	r30, 0xBC	; 188
+ 17c:	f0 e0       	ldi	r31, 0x00	; 0
+ 17e:	80 81       	ld	r24, Z
+ 180:	84 69       	ori	r24, 0x94	; 148
+ 182:	80 83       	st	Z, r24
+	while((TWCR0 & (1<<TWSTO))==1);//esperamos hasta q se complete el stop
+ 184:	80 81       	ld	r24, Z
+ 186:	08 95       	ret
+
+00000188 <main>:
+
+uint8_t Display_7Seg_A[10] = {0XC0,0XF9,0XA4,0XB0,0X99,0X92,0X82,0XF8,0X80,0X90};
+	
+ int main(void)
+ {
+ I2C_AVR_Init();
+ 188:	0e 94 79 00 	call	0xf2	; 0xf2 <I2C_AVR_Init>
+ 
+	 for(;;)
+	 {
+		for(centenas=0;centenas<10;centenas++){
+ 18c:	10 92 0b 01 	sts	0x010B, r1	; 0x80010b <centenas>
+ 190:	52 c0       	rjmp	.+164    	; 0x236 <main+0xae>
+			            I2C_AVR_Start();
+ 192:	0e 94 82 00 	call	0x104	; 0x104 <I2C_AVR_Start>
+			            I2C_AVR_Address_Slave(ADDS_PCF3,I2C_WRITE);
+ 196:	60 e0       	ldi	r22, 0x00	; 0
+ 198:	86 e4       	ldi	r24, 0x46	; 70
+ 19a:	0e 94 96 00 	call	0x12c	; 0x12c <I2C_AVR_Address_Slave>
+			            I2C_AVR_Write_Data(Display_7Seg_A[centenas]);
+ 19e:	e0 91 0b 01 	lds	r30, 0x010B	; 0x80010b <centenas>
+ 1a2:	f0 e0       	ldi	r31, 0x00	; 0
+ 1a4:	e0 50       	subi	r30, 0x00	; 0
+ 1a6:	ff 4f       	sbci	r31, 0xFF	; 255
+ 1a8:	80 81       	ld	r24, Z
+ 1aa:	0e 94 ad 00 	call	0x15a	; 0x15a <I2C_AVR_Write_Data>
+			              for(decenas=0;decenas<10;decenas++){
+ 1ae:	10 92 0a 01 	sts	0x010A, r1	; 0x80010a <__data_end>
+ 1b2:	36 c0       	rjmp	.+108    	; 0x220 <main+0x98>
+			                I2C_AVR_Start();
+ 1b4:	0e 94 82 00 	call	0x104	; 0x104 <I2C_AVR_Start>
+			                I2C_AVR_Address_Slave(ADDS_PCF2,I2C_WRITE);
+ 1b8:	60 e0       	ldi	r22, 0x00	; 0
+ 1ba:	8c e4       	ldi	r24, 0x4C	; 76
+ 1bc:	0e 94 96 00 	call	0x12c	; 0x12c <I2C_AVR_Address_Slave>
+			                I2C_AVR_Write_Data(Display_7Seg_A[decenas]);
+ 1c0:	e0 91 0a 01 	lds	r30, 0x010A	; 0x80010a <__data_end>
+ 1c4:	f0 e0       	ldi	r31, 0x00	; 0
+ 1c6:	e0 50       	subi	r30, 0x00	; 0
+ 1c8:	ff 4f       	sbci	r31, 0xFF	; 255
+ 1ca:	80 81       	ld	r24, Z
+ 1cc:	0e 94 ad 00 	call	0x15a	; 0x15a <I2C_AVR_Write_Data>
+			
+			                  for(unidades=0;unidades<10;unidades++){
+ 1d0:	10 92 0c 01 	sts	0x010C, r1	; 0x80010c <unidades>
+ 1d4:	1c c0       	rjmp	.+56     	; 0x20e <main+0x86>
+										I2C_AVR_Start();
+ 1d6:	0e 94 82 00 	call	0x104	; 0x104 <I2C_AVR_Start>
+										I2C_AVR_Address_Slave(ADDS_PCF1,I2C_WRITE);
+ 1da:	60 e0       	ldi	r22, 0x00	; 0
+ 1dc:	80 e4       	ldi	r24, 0x40	; 64
+ 1de:	0e 94 96 00 	call	0x12c	; 0x12c <I2C_AVR_Address_Slave>
+			                            I2C_AVR_Write_Data(Display_7Seg_A[unidades]);
+ 1e2:	e0 91 0c 01 	lds	r30, 0x010C	; 0x80010c <unidades>
+ 1e6:	f0 e0       	ldi	r31, 0x00	; 0
+ 1e8:	e0 50       	subi	r30, 0x00	; 0
+ 1ea:	ff 4f       	sbci	r31, 0xFF	; 255
+ 1ec:	80 81       	ld	r24, Z
+ 1ee:	0e 94 ad 00 	call	0x15a	; 0x15a <I2C_AVR_Write_Data>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 1f2:	2f ef       	ldi	r18, 0xFF	; 255
+ 1f4:	80 e7       	ldi	r24, 0x70	; 112
+ 1f6:	92 e0       	ldi	r25, 0x02	; 2
+ 1f8:	21 50       	subi	r18, 0x01	; 1
+ 1fa:	80 40       	sbci	r24, 0x00	; 0
+ 1fc:	90 40       	sbci	r25, 0x00	; 0
+ 1fe:	e1 f7       	brne	.-8      	; 0x1f8 <main+0x70>
+ 200:	00 c0       	rjmp	.+0      	; 0x202 <main+0x7a>
+ 202:	00 00       	nop
+			              for(decenas=0;decenas<10;decenas++){
+			                I2C_AVR_Start();
+			                I2C_AVR_Address_Slave(ADDS_PCF2,I2C_WRITE);
+			                I2C_AVR_Write_Data(Display_7Seg_A[decenas]);
+			
+			                  for(unidades=0;unidades<10;unidades++){
+ 204:	80 91 0c 01 	lds	r24, 0x010C	; 0x80010c <unidades>
+ 208:	8f 5f       	subi	r24, 0xFF	; 255
+ 20a:	80 93 0c 01 	sts	0x010C, r24	; 0x80010c <unidades>
+ 20e:	80 91 0c 01 	lds	r24, 0x010C	; 0x80010c <unidades>
+ 212:	8a 30       	cpi	r24, 0x0A	; 10
+ 214:	00 f3       	brcs	.-64     	; 0x1d6 <main+0x4e>
+	 {
+		for(centenas=0;centenas<10;centenas++){
+			            I2C_AVR_Start();
+			            I2C_AVR_Address_Slave(ADDS_PCF3,I2C_WRITE);
+			            I2C_AVR_Write_Data(Display_7Seg_A[centenas]);
+			              for(decenas=0;decenas<10;decenas++){
+ 216:	80 91 0a 01 	lds	r24, 0x010A	; 0x80010a <__data_end>
+ 21a:	8f 5f       	subi	r24, 0xFF	; 255
+ 21c:	80 93 0a 01 	sts	0x010A, r24	; 0x80010a <__data_end>
+ 220:	80 91 0a 01 	lds	r24, 0x010A	; 0x80010a <__data_end>
+ 224:	8a 30       	cpi	r24, 0x0A	; 10
+ 226:	30 f2       	brcs	.-116    	; 0x1b4 <main+0x2c>
+										I2C_AVR_Address_Slave(ADDS_PCF1,I2C_WRITE);
+			                            I2C_AVR_Write_Data(Display_7Seg_A[unidades]);
+			                            _delay_ms(50);
+			                  }
+			              }
+			              I2C_AVR_Stop();
+ 228:	0e 94 bd 00 	call	0x17a	; 0x17a <I2C_AVR_Stop>
+ {
+ I2C_AVR_Init();
+ 
+	 for(;;)
+	 {
+		for(centenas=0;centenas<10;centenas++){
+ 22c:	80 91 0b 01 	lds	r24, 0x010B	; 0x80010b <centenas>
+ 230:	8f 5f       	subi	r24, 0xFF	; 255
+ 232:	80 93 0b 01 	sts	0x010B, r24	; 0x80010b <centenas>
+ 236:	80 91 0b 01 	lds	r24, 0x010B	; 0x80010b <centenas>
+ 23a:	8a 30       	cpi	r24, 0x0A	; 10
+ 23c:	08 f4       	brcc	.+2      	; 0x240 <main+0xb8>
+ 23e:	a9 cf       	rjmp	.-174    	; 0x192 <main+0xa>
+ 240:	a5 cf       	rjmp	.-182    	; 0x18c <main+0x4>
+
+00000242 <_exit>:
+ 242:	f8 94       	cli
+
+00000244 <__stop_program>:
+ 244:	ff cf       	rjmp	.-2      	; 0x244 <__stop_program>

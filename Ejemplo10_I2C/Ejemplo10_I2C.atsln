@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Atmel Studio Solution File, Format Version 11.00
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "Ejemplo_DAC", "Ejemplo_DAC\Ejemplo_DAC.cproj", "{DCE6C7E3-EE26-4D79-826B-08594B9AD897}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "Ejemplo_Expansor_IO", "Ejemplo_Expansor_IO\Ejemplo_Expansor_IO.cproj", "{91FAFD68-2743-4A0E-BAB0-C9480E0BB98F}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "Ejemplo_EEPROM", "Ejemplo_EEPROM\Ejemplo_EEPROM.cproj", "{1982F1B1-C10D-4927-AB74-99EB416273C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Debug|AVR.ActiveCfg = Debug|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Debug|AVR.Build.0 = Debug|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|AVR.ActiveCfg = Release|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|AVR.Build.0 = Release|AVR
+		{91FAFD68-2743-4A0E-BAB0-C9480E0BB98F}.Debug|AVR.ActiveCfg = Debug|AVR
+		{91FAFD68-2743-4A0E-BAB0-C9480E0BB98F}.Debug|AVR.Build.0 = Debug|AVR
+		{91FAFD68-2743-4A0E-BAB0-C9480E0BB98F}.Release|AVR.ActiveCfg = Release|AVR
+		{91FAFD68-2743-4A0E-BAB0-C9480E0BB98F}.Release|AVR.Build.0 = Release|AVR
+		{1982F1B1-C10D-4927-AB74-99EB416273C5}.Debug|AVR.ActiveCfg = Debug|AVR
+		{1982F1B1-C10D-4927-AB74-99EB416273C5}.Debug|AVR.Build.0 = Debug|AVR
+		{1982F1B1-C10D-4927-AB74-99EB416273C5}.Release|AVR.ActiveCfg = Release|AVR
+		{1982F1B1-C10D-4927-AB74-99EB416273C5}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
